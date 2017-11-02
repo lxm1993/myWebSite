@@ -1,0 +1,69 @@
+@import "./commonheader.scss";
+.article-box{
+	position:relative;
+	width:$max-width;
+	margin: 0 auto;
+	.article-content{
+		width:$max-width;
+		margin-top:30px;
+		.commontab-box{
+			$tabBag: #eee7e7;
+			$tabboxWH:400px;
+			$tabH:40px;
+			float:right;
+			width:$tabboxWH;
+			height:$tabboxWH;
+		//	background-color:#eee7e7;
+			.tab-nav{
+				float:right;
+				width:$tabboxWH;
+				height:$tabH;
+				margin: 0 auto;
+			    li{
+					float:left;
+					width:23%;
+					background-color:$tabBag;
+					border-radius:5px 5px 0 0;
+					margin-right:4px;
+					a{
+						display:block;
+						height:$tabH;
+						line-height:$tabH;
+						text-align: center;
+						font-weight:bold;
+						font-size:15px;
+					}
+					&.active{
+						background-color:#f8d2e3;
+					}
+				}
+
+			}
+			.content-wrap{
+				$boxH : $tabboxWH - $tabH;
+				clear:both;
+				width:$tabboxWH;
+				height:$boxH;
+				background-color:$tabBag;
+				padding:5px;
+				border-radius:0 5px 5px 5px;
+				.content-item{
+					height:$boxH;
+					display:none;
+					&.cur{
+						display:block;
+					}
+					li{
+						font-size:16px;
+						height:35px;
+						line-height:35px;
+						margin-bottom:5px;
+						background-color:#f8d2e3;
+						width:100%;
+						border-radius:5px;
+					}
+				}			
+			}
+		}
+	}
+}

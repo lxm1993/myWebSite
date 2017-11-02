@@ -1,0 +1,20 @@
+@import "./commonheader.scss";
+.contact-box{
+	position:relative;
+	width:$max-width;
+	margin: 0 auto;
+	.contact-content{
+		a{
+			color:#fff;
+			background:#ea889f;
+			width:100px;
+			height:30px;
+			line-height:30px;
+			text-align:center;
+			border:solid 2px gray;
+			border-radius:5px;
+			display:block;
+			margin-top:10px;
+		}
+	}
+}

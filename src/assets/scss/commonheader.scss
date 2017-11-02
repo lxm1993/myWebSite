@@ -1,0 +1,51 @@
+$pink-color : #baedbc;
+$hightlight-color : #ea889f;
+$max-width:1200px;
+.home-header{
+	.header-box{
+		background-color: #f5f5f5;
+		background-position: top left;
+		.header-top{
+			height:50px;
+			line-height:50px;
+			width:$max-width;
+			margin:0 auto;
+		    .header-left{
+		    		width:400px;    		
+		    		float:left;
+		    		ul{
+		    			display:block;
+		    			margin:0;
+		    			li{
+		    				display:inline-block;
+		    				padding:14px 18px;
+		    				position:relative;
+		    				line-height:normal;
+		    				a{
+		    					font-family: Chivo;
+							    font-size: 14px;
+							    font-weight: 500;
+							    line-height: 20px;
+							    &:hover{
+							    	color:$hightlight-color;
+							    }
+							    &.active{
+							    	color:$hightlight-color;
+							    }
+		    				}
+		    			}
+
+		    		}
+		    	}
+		    	.header-right{
+		    		float:right;
+		    		img{
+						width:92px;
+		    			height:69px;
+		    		}
+					// background-color:$pink-color;
+		    	}
+		}
+
+	}
+}

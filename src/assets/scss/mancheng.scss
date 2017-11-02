@@ -1,0 +1,65 @@
+.mancheng{
+	header{
+		position:relative;
+	    margin-left:20%;
+	    margin-right:20%;
+		.header-bg{
+			width:100%;
+			vertical-align: top;
+		}
+		.intro{
+			position:absolute;
+			display:block;
+			width:100%;
+			left:0;
+			bottom:0;
+			z-index:20;
+			// background-color:rgb(255,255,255);
+			// opacity:0.7;
+			// filter:alpha(opacity=70);
+			img{
+				margin:0 20px 0 15px;
+				float:left;
+			}
+			.man-text{
+				// font-family:"Times New Roman",Georgia,Serif;
+				 font: italic bold 15px/20px arial ,sans-serif;
+				 color:#fff;
+				 overflow:hidden;
+				 line-height:20px;
+				 .man-name{
+				 	padding:15px 0 10px 0;
+				 }
+				 .man-other{
+				 	span{
+				 		padding-left:17px;
+				 		margin-right:10px;
+				 		display:inline-block;
+				 		position:relative;
+				 		&:before{
+				 			width:13px;
+				 			height:13px;
+				 			content:'';
+				 			position:absolute;
+				 			left:0;
+				 			top:5px;
+				 		}
+				 		&.s1{
+							&:before{
+							background:url(../images/mc/spr_ico.png) -65px -26px no-repeat;
+							background-size: 106px auto;
+					 		}
+				 		}
+				 		&.s2{
+				 			&:before{
+				 				background:url(../images/mc/spr_ico.png) -45px -25px no-repeat;
+				 				background-size:106px auto;
+				 			}
+				 		}
+				 	}
+				 }
+			}
+		}
+
+	}
+}
